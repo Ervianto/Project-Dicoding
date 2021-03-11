@@ -61,6 +61,36 @@ class MyProfil extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+              SizedBox(
+                height: 5,
+                child: Container(
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                'JURUSAN TEKNOLOGI INFORMASI',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                'POLITEKNIK NEGERI',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                'MALANG',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
             ],
           ),
         )
