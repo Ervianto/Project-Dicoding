@@ -57,6 +57,46 @@ class _HomeState extends State<Home> {
                             hintText: "Sisi Atas"),
                       ),
                     ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Expanded(
+                      child: TextField(
+                        onChanged: (txt) {},
+                        keyboardType: TextInputType.number,
+                        maxLength: 5,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                        decoration: InputDecoration(
+                            labelText: "Sisi Bawah",
+                            suffix: Text("cm"),
+                            border: new OutlineInputBorder(
+                                borderRadius: new BorderRadius.circular(10.0)),
+                            hintText: "Sisi Bawah"),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Expanded(
+                      child: TextField(
+                        onChanged: (txt) {},
+                        keyboardType: TextInputType.number,
+                        maxLength: 5,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                        decoration: InputDecoration(
+                            labelText: "Tinggi",
+                            suffix: Text("cm"),
+                            border: new OutlineInputBorder(
+                                borderRadius: new BorderRadius.circular(10.0)),
+                            hintText: "Tinggi"),
+                      ),
+                    ),
                   ],
                 ),
               ],
