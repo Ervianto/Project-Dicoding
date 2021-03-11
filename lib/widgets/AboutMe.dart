@@ -24,7 +24,7 @@ class MyProfil extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         image: DecorationImage(
-                            image: AssetImage('assets/images/aku.jpg'),
+                            image: AssetImage('assets/images/me.jpg'),
                             fit: BoxFit.cover),
                       )),
                 ),
@@ -39,6 +39,14 @@ class MyProfil extends StatelessWidget {
               SizedBox(height: 20),
               Text(
                 'Ervianto Bagus Wibowo ( 05 )',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                'MI-2D',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
