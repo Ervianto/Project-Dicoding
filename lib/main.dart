@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     debugShowCheckedModeBanner:
-    false;
+    false,
     return new Scaffold(
       appBar: new AppBar(
         leading: new Icon(Icons.view_list),
