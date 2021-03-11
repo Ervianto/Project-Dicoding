@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     debugShowCheckedModeBanner:
-    false,
+    false;
     return new Scaffold(
       appBar: new AppBar(
         leading: new Icon(Icons.view_list),
@@ -39,7 +39,25 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 new Padding(padding: new EdgeInsets.only(top: 20.0)),
                 new Row(
-                  children: <Widget>[],
+                  children: <Widget>[
+                    Expanded(
+                      child: TextField(
+                        onChanged: (txt) {},
+                        keyboardType: TextInputType.number,
+                        maxLength: 5,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                        decoration: InputDecoration(
+                            labelText: "Sisi Atas",
+                            suffix: Text("cm"),
+                            border: new OutlineInputBorder(
+                                borderRadius: new BorderRadius.circular(10.0)),
+                            hintText: "Sisi Atas"),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
