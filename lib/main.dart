@@ -99,6 +99,26 @@ class _HomeState extends State<Home> {
                     ),
                   ],
                 ),
+                new Padding(padding: new EdgeInsets.only(top: 20.0)),
+                Container(
+                  margin: EdgeInsets.only(left: 10, right: 10, bottom: 20),
+                  child: RaisedButton(
+                    onPressed: () {
+                      var route = new MaterialPageRoute(
+                        builder: (BuildContext) {},
+                      );
+                      Navigator.of(context).push(route);
+                    },
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                    child: Text(
+                      'Hitung Luas',
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
