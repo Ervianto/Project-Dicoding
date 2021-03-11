@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
         leading: new Icon(Icons.view_list),
         title: new Text("Hitung Luas Trapesium"),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.lime,
         actions: <Widget>[
           new IconButton(
             icon: Icon(Icons.person_outline),
@@ -141,8 +141,8 @@ class _HomeState extends State<Home> {
                       Navigator.of(context).push(route);
                     },
                     padding: EdgeInsets.all(10.0),
-                    color: Colors.blue,
-                    textColor: Colors.white,
+                    color: Colors.lime,
+                    textColor: Colors.black,
                     child: Text(
                       'Hitung Luas',
                       style:

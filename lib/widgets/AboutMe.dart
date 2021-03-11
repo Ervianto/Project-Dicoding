@@ -5,7 +5,7 @@ class MyProfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.lime,
         title: Text('ABOUT ME'),
         centerTitle: true,
       ),
@@ -32,6 +32,22 @@ class MyProfil extends StatelessWidget {
             ],
           ),
         ),
+        Container(
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              SizedBox(height: 20),
+              Text(
+                'Ervianto Bagus Wibowo ( 05 )',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          ),
+        )
       ]),
     );
   }
