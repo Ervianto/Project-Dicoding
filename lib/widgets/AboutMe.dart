@@ -53,6 +53,14 @@ class MyProfil extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+              Text(
+                '1931710025',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black,
+                ),
+              ),
             ],
           ),
         )
