@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/trapesium_result.dart';
+
 void main() {
   runApp(new MaterialApp(
     home: new Home(),
@@ -126,7 +128,14 @@ class _HomeState extends State<Home> {
                   child: RaisedButton(
                     onPressed: () {
                       var route = new MaterialPageRoute(
-                        builder: (BuildContext) {},
+                        builder: (BuildContext) {
+                          var trapesium = new TrapesiumResult(
+                            sa: atap,
+                            sb: alas,
+                            tt: tinggi,
+                          );
+                          return trapesium;
+                        },
                       );
                       Navigator.of(context).push(route);
                     },
