@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'widgets/AboutMe.dart';
 import 'widgets/trapesium_result.dart';
 
 void main() {
@@ -7,6 +7,7 @@ void main() {
     home: new Home(),
     routes: <String, WidgetBuilder>{
       '/HalSatu': (BuildContext context) => new Home(),
+      '/HalDua': (BuildContext context) => new MyProfil(),
     },
   ));
 }
