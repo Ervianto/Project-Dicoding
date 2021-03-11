@@ -51,7 +51,11 @@ class _HomeState extends State<Home> {
                   children: <Widget>[
                     Expanded(
                       child: TextField(
-                        onChanged: (txt) {},
+                        onChanged: (txt) {
+                          setState(() {
+                            atap = int.parse(txt);
+                          });
+                        },
                         keyboardType: TextInputType.number,
                         maxLength: 5,
                         textAlign: TextAlign.center,
@@ -71,7 +75,11 @@ class _HomeState extends State<Home> {
                     ),
                     Expanded(
                       child: TextField(
-                        onChanged: (txt) {},
+                        onChanged: (txt) {
+                          setState(() {
+                            alas = int.parse(txt);
+                          });
+                        },
                         keyboardType: TextInputType.number,
                         maxLength: 5,
                         textAlign: TextAlign.center,
@@ -91,7 +99,11 @@ class _HomeState extends State<Home> {
                     ),
                     Expanded(
                       child: TextField(
-                        onChanged: (txt) {},
+                        onChanged: (txt) {
+                          setState(() {
+                            tinggi = int.parse(txt);
+                          });
+                        },
                         keyboardType: TextInputType.number,
                         maxLength: 5,
                         textAlign: TextAlign.center,
