@@ -9,6 +9,30 @@ class MyProfil extends StatelessWidget {
         title: Text('ABOUT ME'),
         centerTitle: true,
       ),
+      body: ListView(children: <Widget>[
+        Container(
+          color: Colors.white,
+          child: Stack(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/aku.jpg'),
+                            fit: BoxFit.cover),
+                      )),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ]),
     );
   }
 }
