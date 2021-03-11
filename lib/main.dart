@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(new MaterialApp(
     home: new Home(),
+    routes: <String, WidgetBuilder>{
+      '/HalSatu': (BuildContext context) => new Home(),
+    },
   ));
 }
 
@@ -12,6 +15,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  int atap = 0;
+  int alas = 0;
+  int tinggi = 0;
+
+  var _nama = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     debugShowCheckedModeBanner:
