@@ -61,7 +61,7 @@ class TrapesiumResult extends StatelessWidget {
                 "HASIL",
                 style: TextStyle(
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Colors.red,
                     fontWeight: FontWeight.bold),
               ),
             ),
