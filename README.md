@@ -1,7 +1,9 @@
 # quiz_part_1
 
 Nama : Ervianto Bagus Wibowo
+
 Kelas/No : MI-2D/ 05
+
 NIM : 1931710025 
 
 A new Flutter project.
