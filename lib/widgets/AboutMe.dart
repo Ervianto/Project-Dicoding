@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart'; // import material dari dart
 
 class MyProfil extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -8,13 +7,13 @@ class MyProfil extends StatelessWidget {
       appBar: AppBar(
         // NavBar
         backgroundColor: Colors.lime,
-        title: Text('ABOUT ME'),
+        title: Text('ABOUT ME'), // nama navbar
         centerTitle: true,
       ),
       body: ListView(children: <Widget>[
         Container(
           // widget images
-          color: Colors.white,
+          color: Colors.white, //menSet warna jadi putih
           child: Stack(
             children: <Widget>[
               Padding(
@@ -23,7 +22,7 @@ class MyProfil extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                      height: 100,
+                      height: 100, // untuk menSet ukuran bingkai foto
                       width: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
@@ -40,64 +39,77 @@ class MyProfil extends StatelessWidget {
           // Container adalah untuk mengatur penempatan dan ukuran
           color: Colors.white,
           child: Column(
+            // menambahkan kolom
             // kolom teks nama
             children: <Widget>[
-              SizedBox(height: 20),
+              SizedBox(height: 20), //mengatur ukuran sizedbox
               Text(
                 'Ervianto Bagus Wibowo ( 05 )',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  // UNTUK mengatur style teks
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, //untuk mengatur warna huruf
                 ),
               ),
               Text(
                 'MI-2D', // teks kelas
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  // UNTUK mengatur style teks
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, //untuk mengatur warna huruf
                 ),
               ),
               Text(
                 '1931710025', // teks nim
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  // UNTUK mengatur style teks
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, //untuk mengatur warna huruf
                 ),
               ),
               SizedBox(
                 //  widget digunakan untuk menambahkan jarak baik secara vertikal atau horizontal.
                 height: 5,
                 child: Container(
-                  color: Colors.white,
+                  // Container adalah untuk mengatur penempatan dan ukuran
+                  color: Colors.white, //untuk mengatur warna huruf
                 ),
               ),
               Text(
                 // teks jurusan
                 'JURUSAN TEKNOLOGI INFORMASI',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, //untuk mengatur warna huruf
                 ),
               ),
               Text(
                 'POLITEKNIK NEGERI',
                 style: TextStyle(
+                  // UNTUK mengatur style teks
                   // teks polinema
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, //untuk mengatur warna huruf
                 ),
               ),
               Text(
                 'MALANG',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.black,
+                  // UNTUK mengatur style teks
+                  fontWeight:
+                      FontWeight.bold, // untuk merubah huruf menjadi tebal
+                  fontSize: 20, // untuk mengatur ukuran huruf
+                  color: Colors.black, // untuk mengatur warna huruf
                 ),
               ),
             ],
