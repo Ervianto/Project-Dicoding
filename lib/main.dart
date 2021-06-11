@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'widgets/AboutMe.dart';
-import 'widgets/trapesium_result.dart';
+import 'package:flutter/material.dart'; //mengimport material dart
+import 'widgets/AboutMe.dart'; //mengimport widgets dari class about me
+import 'widgets/trapesium_result.dart'; //mwngimport widgets dari class trapesium
 
 void main() {
   runApp(new MaterialApp(
@@ -37,30 +37,35 @@ class _HomeState extends State<Home> {
         leading: new Icon(Icons.view_list), // icon pojok kiri atas
         title: new Text("Hitung Luas Trapesium"),
         centerTitle: true,
-        backgroundColor: Colors.lime,
+        backgroundColor: Colors.lime, // menSet warna background
         actions: <Widget>[
           //button ke halaman AboutMe
           new IconButton(
             icon: Icon(Icons.person_outline), // icon pojok kanan atas
             onPressed: () {
+              // fungsi tombol ke hal 2
               Navigator.pushNamed(context, '/HalDua');
             },
           )
         ],
       ),
       body: ListView(
+        //menambahkan list view
         children: <Widget>[
           new Container(
             padding: new EdgeInsets.all(20.0),
             child: new Column(
+              //menambahkan kolom
               children: <Widget>[
                 new Padding(padding: new EdgeInsets.only(top: 20.0)),
                 new Row(
+                  //menambahkan baris
                   children: <Widget>[
                     Expanded(
                       // input data
                       child: TextField(
                         onChanged: (txt) {
+                          // tombol inputan
                           setState(() {
                             // object yang berubah pada State
                             atap = int.parse(txt);
@@ -71,12 +76,13 @@ class _HomeState extends State<Home> {
                         maxLength: 5,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16, // mengatur ukuran huruf
                         ),
                         // input sisi atas dalam satuan Cm
                         decoration: InputDecoration(
-                            labelText: "Sisi Atas",
-                            suffix: Text("cm"),
+                            labelText: "Sisi Atas", // Nama teks inputan
+                            suffix:
+                                Text("cm"), // //untuk menSet satuan ukuran CM
                             border: new OutlineInputBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
                             hintText: "Sisi Atas"),
@@ -98,21 +104,21 @@ class _HomeState extends State<Home> {
                             TextInputType.number, // input keyboard khusus angka
                         // maksimal panjang datanya 5
                         maxLength: 5,
-                        textAlign: TextAlign.center,
+                        textAlign: TextAlign.center, // memposisikan ke tengah
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16, //ukuran huruf
                         ),
                         // input sisi bawah dalam satuan Cm
                         decoration: InputDecoration(
-                            labelText: "Sisi Bawah",
-                            suffix: Text("cm"),
+                            labelText: "Sisi Bawah", // Nama teks inpuatn
+                            suffix: Text("cm"), //untuk menSet satuan ukuran CM
                             border: new OutlineInputBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
                             hintText: "Sisi Bawah"),
                       ),
                     ),
                     SizedBox(
-                      width: 10,
+                      width: 10, //ukuran sizedbox
                     ),
                     Expanded(
                       // Expanded Widget merupakan sebuah widget yang memperluas anak dari Row, Column atau flex sehingga mengisi ruang yang tersedia
@@ -125,18 +131,20 @@ class _HomeState extends State<Home> {
                         keyboardType: TextInputType.number,
                         // maksimal panjang datanya 5
                         maxLength: 5,
-                        textAlign: TextAlign.center,
+                        textAlign:
+                            TextAlign.center, //untuk menposisikan ke tengah
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16, // ukuran huruf
                         ),
                         // input tinggi dalam satuan Cm
                         decoration: InputDecoration(
-                            labelText: "Tinggi",
-                            suffix: Text("cm"),
+                            labelText: "Tinggi", // Nama teks inpuatn
+                            suffix: Text("cm"), //untuk menSet satuan ukuran CM
                             border: new OutlineInputBorder(
                                 borderRadius: new BorderRadius.circular(10.0)),
                             // fungsi hint text ketika di klik akan muncul tulisan Tinggi
-                            hintText: "Tinggi"),
+                            hintText:
+                                "Tinggi"), //menampilkan hint teks di inputan
                       ),
                     ),
                   ],
@@ -155,7 +163,7 @@ class _HomeState extends State<Home> {
                           var trapesium = new TrapesiumResult(
                             sa: atap,
                             sb: alas,
-                            tt: tinggi,
+                            tt: tinggi, // mengambil nilai fungsi
                           );
                           return trapesium; // fungsi variabel
                         },
@@ -165,11 +173,13 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.all(
                         10.0), // fungsi padding memposisikan widget child yang dimilikinya dengan memberikan jarak
                     color: Colors.lime,
-                    textColor: Colors.black,
+                    textColor: Colors.black, //merubah warna teks
                     child: Text(
                       'Hitung Luas',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight:
+                              FontWeight.bold), //untuk mengatur style huruf
                     ),
                   ),
                 ),
